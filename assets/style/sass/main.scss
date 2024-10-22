@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: 1fr 1fr;
+    min-height: 100vh;
+}
+
+header {
+    grid-column: 1 / -1; /* Header tüm sütunları kaplar */
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+main {
+    display: contents; 
+}
+
+.left {
+    grid-column: 1; 
+    padding: 20px;
+}
+.left-item{
+    background-color:aqua;
+    margin-bottom: 10px;
+    padding: 150px;
+    border-radius: 5px;
+}
+.right {
+    grid-column: 2; 
+    padding: 20px;
+}
+
+ .right-item {
+    background-color: #f1f1f1;
+    gap: 20px;
+    padding: 60px;
+    border-radius: 5px;
+}
+
+footer {
+    grid-column: 1 / -1; 
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
